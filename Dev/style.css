@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(226, 221, 211);
+    box-sizing: border-box;
+}
+html{
+
+    height: 100vh;
+    width: 100%;
+
+}
+header{
+    background-color: rgb(114, 142, 194);
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    width: 100%;
+}
+nav, li{
+    
+}
+nav, ul, li, a{
+    font-style: none;
+    list-style: none;
+    font-size: 1.65vh;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    margin-right: 10px;
+    transition: 0.4s;
+    font-family: "Montserrat", serif;
+}
+nav, ul, li, a:hover{
+    scale: 1.1;
+}
+.eu{
+    border-radius: 50%;
+    margin: 75px 0 0 75px;
+}
+.box {
+    margin: -508px 0 0 71px;
+    justify-content: center;
+    height: 508px;
+    width: 508px;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
+          var(--angle),
+          #070707,
+          rgb(114, 142, 194)
+        ) border-box;
+    animation: 4s rotate linear infinite;
+  }
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+footer{
+    background-color: rgb(114, 142, 194);
+    padding: 20px 30px;
+ 
+}
+.texto{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+

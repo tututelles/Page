@@ -1,3 +1,6 @@
+@import'@/styles/variables.scss';
+@import'@/styles/mixins.scss';
+
 *{
     margin: 0;
     border: 0;
@@ -31,7 +34,8 @@ nav, ul, li, a{
     text-decoration: none;
     color: white;
     background-color: transparent;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin-right: 10px;
     transition: 0.4s;
     font-family: "Montserrat", serif;
@@ -124,4 +128,47 @@ form input:focus, form textarea:focus{
 }
 .button button:hover{
     scale: 1.03;
+}
+.menu{
+    background-color: rgb(114, 142, 194);
+    display: none; 
+    position: fixed;
+    width: 15px;
+    height: 15px;
+}
+.icon{
+    background-color: rgb(114, 142, 194);
+    color: white;
+    transition: 0.5s;
+    margin-bottom: 0px;
+
+}
+.icon:hover{
+scale: 1.2;
+}
+@media only screen and (max-width: 700px){
+    .link{
+        display: none;
+    }
+        .menu{
+            display: block;
+            position: absolute;
+            scale: 2;
+        }
+        
+        
+}
+.close{
+    position: relative;
+    left: 60%;
+    top: -80%;
+    background-color: rgb(114, 142, 194);
+}
+.close .icon{
+    width: 25px;
+    height: 25px;
+    
+}
+#but2{
+    display: none;
 }

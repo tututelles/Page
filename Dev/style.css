@@ -16,7 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.header {
     background-color: rgb(114, 142, 194);
     width: 35%;
     display: flex;
@@ -83,7 +83,7 @@ form div {
 }
 
 form {
-    z-index: 1;
+    z-index: 0;
     font-family: "Montserrat", serif;
     width: 400px;
 }
@@ -258,4 +258,41 @@ iframe {
     text-shadow:  15px 15px 30px rgb(19, 19, 19),
     -15px -15px 30px rgb(20, 20, 20);
     background-color: rgb(226, 221, 211);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.boxe{
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    left: 90vw;
+    top: 20px;
+    background-color: rgb(56, 165, 116);
+    transition: 0.5s;
+}
+.preto{
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    left: 90vw;
+    top: 20px;
+    transition: 0.5s;
+    background-color: ;
+}
+.preto:hover .branco{
+    z-index: 11;
+ display: block;
+ transition: 0.5s;
+}
+.preto:hover{
+    display: none;
+}
+.branco{
+    position: absolute;
+    display: none;
+    left: ;
+    background-color: rgb(56, 165, 116);
+    transition: 0.5s;
 }

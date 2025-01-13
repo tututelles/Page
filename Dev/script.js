@@ -1,9 +1,5 @@
-
-
-
-
 function menu(){
-        document.getElementById("link").style.display = "block";
+        document.getElementById("link").style.display = "block" ;
          document.getElementById("link").style.color = "black";
          document.getElementById("link").style.marginBottom = "5px";
          document.getElementById("but").style.display = "none";

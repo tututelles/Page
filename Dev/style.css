@@ -89,6 +89,7 @@ form {
 }
 
 .section {
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,36 +264,57 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.boxe{
-    z-index: 10;
-    position: fixed;
-    display: flex;
-    left: 90vw;
-    top: 20px;
-    background-color: rgb(56, 165, 116);
-    transition: 0.5s;
-}
 .preto{
-    z-index: 10;
+    z-index: 2;
     position: fixed;
     display: flex;
     left: 90vw;
-    top: 20px;
+    top: 15px;
+    transition: 0.5s;
+    background-color:rgb(114, 142, 194) ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.preto a{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    left: 90vw;
+    top: 15px;
     transition: 0.5s;
     background-color: ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.6s;
 }
-.preto:hover .branco{
-    z-index: 11;
- display: block;
- transition: 0.5s;
+.preto1{
+    background-color: transparent;
 }
-.preto:hover{
-    display: none;
+.preto a:hover{
+    scale: 1;
+    border-radius: 50%;
+    background-color: rgb(39, 192, 133);
+    display: ;
 }
-.branco{
-    position: absolute;
-    display: none;
-    left: ;
-    background-color: rgb(56, 165, 116);
-    transition: 0.5s;
+.box4{
+    background-color: rgb(114, 142, 194);
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 40px;
+    position: fixed;
+    z-index: 2;
+    border-radius: 30px;
+    top: 10px;
+    left: 90%;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(176, 176, 176);
 }
+
+

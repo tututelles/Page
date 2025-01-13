@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 <body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
-    <header>
-      <div class="header">
-        <nav>
-            <ul id="lista">
-            <button onclick="menu()" id="but" class="menu"><ion-icon class="icon" name="menu-outline"></ion-icon></button>
-            <li><a id="link" class="link" href="#eu">Home</a></li>
-            <li><a id="link2" class="link" href="#texto">About</a></li>
-            <li><a id="link3" class="link" href="#form">Consult</a></li>
-            <li><a id="link4" class="link" href="#form">Contacts</a></li>     
-            <li><a id="link5" class="link" href="#iframe">Localization</a></li>         
-            <button onclick="menu2()" id="but2" class="close"><ion-icon class="icon" name="close-outline"></ion-icon></button>
-            </ul>  
-          </nav>
-        </div>
-        <div class="box4">
-        <div class="preto"> <a href=""> <img class="preto1"  width="40px" height="40px" src="wppbranco.svg" alt=""></a></div>
-        </div>  
-    
-    
-    
-      </header>
-        <div  class="container2">
-        <img  id="eu" class="eu" src="eu.jpg" alt="">
-          <p  class="nome">
-            Arthur Telles
-          </p>
-</div>
-        <h1 data-aos="fade-up" id="texto" class="texto">
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum <br>
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum <br>
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum <br>
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-        </h1>
-
-
-
-        <footer>
-        <div  data-aos="fade-up" class="section">
-            <form id="form" class="form" action="mailto:arthurdf08@gmail.com" method="post">
-            <div>
-                <input placeholder="Nome" class="input" type="text" id="nome" required/>
-              </div>
-              <div>
-                <input placeholder="Email" class="input" type="email" id="email" required />
-              </div>
-              <div>
-                <textarea style="resize: none" placeholder="Mensagem" class="input" required id="msg"></textarea>
-              </div>
-              <div class="button">
-                <button type="submit">Enviar</button>
-              </div>
-        </form>
+  <header>
+    <div class="header">
+      <nav>
+        <ul id="lista">
+          <button onclick="menu()" id="but" class="menu"><ion-icon class="icon" name="menu-outline"></ion-icon></button>
+          <li><a id="link" class="link" href="#eu">Home</a></li>
+          <li><a id="link2" class="link" href="#texto">About</a></li>
+          <li><a id="link3" class="link" href="#form">Consult</a></li>
+          <li><a id="link4" class="link" href="#form">Contacts</a></li>
+          <li><a id="link5" class="link" href="#iframe">Localization</a></li>
+          <button onclick="menu2()" id="but2" class="close"><ion-icon class="icon"
+              name="close-outline"></ion-icon></button>
+        </ul>
+      </nav>
+    </div>
+    <div class="box4">
+      <div class="preto"> <a href=""> <img class="preto1" width="40px" height="40px" src="wppbranco.svg" alt=""></a>
       </div>
+    </div>
 
 
 
-        
-            <iframe data-aos="fade-down" id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.325836488783!2d-38.51538872502606!3d-3.739000296234914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f6cb0a0013%3A0x4adef8c2aa279482!2sR.%20Carlos%20Vasconcelos%2C%201946%20-%20Aldeota%2C%20Fortaleza%20-%20CE%2C%2060115-171!5e0!3m2!1spt-BR!2sbr!4v1736549474445!5m2!1spt-BR!2sbr" 
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="fast" align-items = "center" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-        
-        
-        
-          </footer>
+  </header>
+  <div class="container2">
+    <img id="eu" class="eu" src="eu.jpg" alt="">
+    <p class="nome">
+      Arthur Telles
+    </p>
+  </div>
+  <h1 data-aos="fade-up" id="texto" class="texto">
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum <br>
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum <br>
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum <br>
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+  </h1>
+
+
+
+  <footer>
+    <div data-aos="fade-up" class="section">
+      <form id="form" class="form" action="mailto:arthurdf08@gmail.com" method="post">
+        <div>
+          <input placeholder="Nome" class="input" type="text" id="nome" required />
+        </div>
+        <div>
+          <input placeholder="Email" class="input" type="email" id="email" required />
+        </div>
+        <div>
+          <textarea style="resize: none" placeholder="Mensagem" class="input" required id="msg"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <iframe data-aos="fade-down" id="iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.325836488783!2d-38.51538872502606!3d-3.739000296234914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f6cb0a0013%3A0x4adef8c2aa279482!2sR.%20Carlos%20Vasconcelos%2C%201946%20-%20Aldeota%2C%20Fortaleza%20-%20CE%2C%2060115-171!5e0!3m2!1spt-BR!2sbr!4v1736549474445!5m2!1spt-BR!2sbr"
+      width="400" height="300" style="border:0;" allowfullscreen="" loading="fast" align-items="center"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+  </footer>
 </body>
+
 </html>

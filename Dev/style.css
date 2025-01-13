@@ -31,10 +31,6 @@ html {
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -15px -15px 30px rgb(176, 176, 176);
 }
-
-nav,
-li {}
-
 nav,
 ul,
 li,
@@ -50,14 +46,14 @@ a {
     margin-right: 10px;
     transition: 0.4s;
     font-family: "Montserrat", serif;
-}
+}/*stylishing header links*/
 
 nav,
 ul,
 li,
 a:hover {
     scale: 1.1;
-}
+}/*style the hover of header links */
 
 .eu {
     border-radius: 50%;
@@ -65,28 +61,29 @@ a:hover {
     box-shadow: 15px 15px 30px rgb(63, 126, 228),
         -15px -15px 30px rgb(63, 126, 228);
         transition: 0.75s;
-}
+}/*making photo round, putting on correctly space and adding shadows */
 .eu:hover{
     box-shadow: 15px 15px 30px rgb(23, 23, 23),
         -15px -15px 30px rgb(198, 198, 198);
-}
+}/*photo hover transition*/
 .texto {
     margin-left: 100px;
     margin-bottom: 50px;
     margin-top: 50px;
-}
+}/*text*/
 
 form div {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-}
+
+}/*adding space between inputs*/
 
 form {
     z-index: 0;
     font-family: "Montserrat", serif;
     width: 400px;
-}
+}/*configure font and the widht of form*/
 
 .section {
     z-index: 1;
@@ -98,7 +95,7 @@ form {
     box-shadow: 15px 15px 30px rgb(50, 50, 50),
         -15px -15px 30px rgb(59, 59, 59);
     border-radius: 40px;
-}
+}/*adjustin parameters, height and widht, adding shadows to make 3d effect*/
 
 form input,
 textarea {
@@ -108,7 +105,7 @@ textarea {
     border-radius: 20px;
     border: solid 2px black;
     transition: 0.5s;
-}
+}/*configure text area to not expand and making good looks*/
 
 .section form div label {
     transition: .2s linear;
@@ -116,7 +113,7 @@ textarea {
     left: 5px;
     background-color: transparent;
     transition: 0.4s;
-}
+}/*adjusting the labels of the inputs*/
 
 .input {
     border: none;
@@ -127,14 +124,14 @@ textarea {
     background-color: #ccc;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
     transition: 300ms ease-in-out;
-}
+}/*removing borders and adding padding for trhe text inside looks good, and adding some inside shadows*/
 
 .input:focus {
     background-color: white;
     transform: scale(1.05);
     box-shadow: 13px 13px 100px #969696,
         -13px -13px 100px #ffffff;
-}
+}/*adding stylish when the input is clicked*/
 
 .button button {
     color: gray;
@@ -149,7 +146,7 @@ textarea {
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;  
-}
+}/*editing everithing of form button*/
 
 .button button:hover {
     border: 1.5px solid white;
@@ -167,7 +164,7 @@ textarea {
     top: -7.5px;
     object-fit: contain;
 
-}
+}/*adding a menu button when the page is too thiner*/
 
 .icon {
     background-color: rgb(114, 142, 194);
@@ -176,7 +173,7 @@ textarea {
     margin-bottom: 0px;
     object-fit: contain;
 
-}
+}/*editing menu button*/
 
 .icon:hover {
     scale: 1.05;
@@ -205,13 +202,14 @@ textarea {
         flex-direction: column;
     }
 
-}
+}/*configure when the page is thiner(cellphone)
+    making it responsive*/
 
 .close {
     position: absolute;
     left: 80%;
     background-color: rgb(114, 142, 194);
-}
+}/*adding a close button for menu part*/
 
 .close .icon {
     width: 20px;
@@ -231,7 +229,7 @@ footer {
     background-color: rgb(114, 142, 194);
     padding: 40px 30px;
 
-}
+}/*making footer contais correctly the objects*/
 
 iframe {
     margin-top: 40px;
@@ -276,7 +274,7 @@ header{
     height: 50px;
     border-radius: 50%;
     padding: 5px;
-}
+}/*configuring div arround wpp icon*/
 .preto a{
     z-index: 2;
     position: fixed;
@@ -290,7 +288,7 @@ header{
     border-radius: 50%;
     padding: 5px;
     transition: 0.6s;
-}
+}/*configuring link of wpp icon*/
 .preto1{
     background-color: transparent;
 }
@@ -315,6 +313,6 @@ header{
     left: 90%;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -15px -15px 30px rgb(176, 176, 176);
-}
+}/*adding a background(navigator) on the wpp icon link*/
 
 

@@ -1,6 +1,29 @@
 @import'@/styles/variables.scss';
 @import'@/styles/mixins.scss';
 
+:root {
+    --item1Transform: translate(-100%, -5%) scale(1.5);
+    --item1Filter: blur(30px);
+    --item1Zindex: 11;
+    --item1Opacity: 0;
+    --item2Transform: translate(0, 0) scale(1);
+    --item2Filter: blur(0);
+    --item2Zindex: 10;
+    --item2Opacity: 0;
+    --item3Transform: translate(50%, 10%) scale(0.8);
+    --item3Filter: blur(10px);
+    --item3Zindex: 9;
+    --item3Opacity: 1;
+
+}
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     border: 0;
@@ -31,6 +54,7 @@ html {
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -15px -15px 30px rgb(176, 176, 176);
 }
+
 nav,
 ul,
 li,
@@ -46,44 +70,58 @@ a {
     margin-right: 10px;
     transition: 0.4s;
     font-family: "Montserrat", serif;
-}/*stylishing header links*/
+}
+
+/*stylishing header links*/
 
 nav,
 ul,
 li,
 a:hover {
     scale: 1.1;
-}/*style the hover of header links */
+}
+
+/*style the hover of header links */
 
 .eu {
     border-radius: 50%;
-    margin: 150px 0  75px;
+    margin: 150px 0 75px;
     box-shadow: 15px 15px 30px rgb(63, 126, 228),
         -15px -15px 30px rgb(63, 126, 228);
-        transition: 0.75s;
-}/*making photo round, putting on correctly space and adding shadows */
-.eu:hover{
+    transition: 0.75s;
+}
+
+/*making photo round, putting on correctly space and adding shadows */
+.eu:hover {
     box-shadow: 15px 15px 30px rgb(23, 23, 23),
         -15px -15px 30px rgb(198, 198, 198);
-}/*photo hover transition*/
+}
+
+/*photo hover transition*/
 .texto {
     margin-left: 100px;
     margin-bottom: 50px;
     margin-top: 50px;
-}/*text*/
+}
+
+/*text*/
 
 form div {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 
-}/*adding space between inputs*/
+}
+
+/*adding space between inputs*/
 
 form {
     z-index: 0;
     font-family: "Montserrat", serif;
     width: 400px;
-}/*configure font and the widht of form*/
+}
+
+/*configure font and the widht of form*/
 
 .section {
     z-index: 1;
@@ -95,7 +133,9 @@ form {
     box-shadow: 15px 15px 30px rgb(50, 50, 50),
         -15px -15px 30px rgb(59, 59, 59);
     border-radius: 40px;
-}/*adjustin parameters, height and widht, adding shadows to make 3d effect*/
+}
+
+/*adjustin parameters, height and widht, adding shadows to make 3d effect*/
 
 form input,
 textarea {
@@ -105,7 +145,9 @@ textarea {
     border-radius: 20px;
     border: solid 2px black;
     transition: 0.5s;
-}/*configure text area to not expand and making good looks*/
+}
+
+/*configure text area to not expand and making good looks*/
 
 .section form div label {
     transition: .2s linear;
@@ -113,7 +155,9 @@ textarea {
     left: 5px;
     background-color: transparent;
     transition: 0.4s;
-}/*adjusting the labels of the inputs*/
+}
+
+/*adjusting the labels of the inputs*/
 
 .input {
     border: none;
@@ -124,14 +168,18 @@ textarea {
     background-color: #ccc;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
     transition: 300ms ease-in-out;
-}/*removing borders and adding padding for trhe text inside looks good, and adding some inside shadows*/
+}
+
+/*removing borders and adding padding for trhe text inside looks good, and adding some inside shadows*/
 
 .input:focus {
     background-color: white;
     transform: scale(1.05);
     box-shadow: 13px 13px 100px #969696,
         -13px -13px 100px #ffffff;
-}/*adding stylish when the input is clicked*/
+}
+
+/*adding stylish when the input is clicked*/
 
 .button button {
     color: gray;
@@ -145,16 +193,19 @@ textarea {
     cursor: pointer;
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;  
-}/*editing everithing of form button*/
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+/*editing everithing of form button*/
 
 .button button:hover {
     border: 1.5px solid white;
 }
+
 .button button:active {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
-  }
-  
+}
+
 .menu {
     background-color: rgb(114, 142, 194);
     display: none;
@@ -164,7 +215,9 @@ textarea {
     top: -7.5px;
     object-fit: contain;
 
-}/*adding a menu button when the page is too thiner*/
+}
+
+/*adding a menu button when the page is too thiner*/
 
 .icon {
     background-color: rgb(114, 142, 194);
@@ -173,7 +226,9 @@ textarea {
     margin-bottom: 0px;
     object-fit: contain;
 
-}/*editing menu button*/
+}
+
+/*editing menu button*/
 
 .icon:hover {
     scale: 1.05;
@@ -202,14 +257,38 @@ textarea {
         flex-direction: column;
     }
 
-}/*configure when the page is thiner(cellphone)
+    .box4 {
+        display: none;
+
+
+    }
+
+    .preto {
+        display: none;
+    }
+
+    .preto a {
+        display: none;
+
+    }
+
+    .preto1 {
+        display: none;
+
+    }
+
+}
+
+/*configure when the page is thiner(cellphone)
     making it responsive*/
 
 .close {
     position: absolute;
     left: 80%;
     background-color: rgb(114, 142, 194);
-}/*adding a close button for menu part*/
+}
+
+/*adding a close button for menu part*/
 
 .close .icon {
     width: 20px;
@@ -229,18 +308,21 @@ footer {
     background-color: rgb(114, 142, 194);
     padding: 40px 30px;
 
-}/*making footer contais correctly the objects*/
+}
+
+/*making footer contais correctly the objects*/
 
 iframe {
     margin-top: 40px;
 }
 
-.container2{
+.container2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.nome{
+
+.nome {
     font-size: 15vh;
     margin-top: 20%;
     border-radius: 40px;
@@ -248,64 +330,71 @@ iframe {
     color: rgb(0, 0, 0);
     font-family: "Montserrat", serif;
     transform: perspective(90deg);
-    text-decoration:none;
+    text-decoration: none;
     transition: 0.6s;
     height: min-content;
 }
-.nome:hover{
+
+.nome:hover {
     box-shadow: none;
-    text-shadow:  15px 15px 30px rgb(19, 19, 19),
-    -15px -15px 30px rgb(20, 20, 20);
+    text-shadow: 15px 15px 30px rgb(19, 19, 19),
+        -15px -15px 30px rgb(20, 20, 20);
     background-color: rgb(226, 221, 211);
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
 }
-.preto{
+
+.preto {
     z-index: 2;
     position: fixed;
-    display: flex;
+
     left: 90vw;
     top: 15px;
     transition: 0.5s;
-    background-color:rgb(114, 142, 194) ;
+    background-color: rgb(114, 142, 194);
     width: 50px;
     height: 50px;
     border-radius: 50%;
     padding: 5px;
-}/*configuring div arround wpp icon*/
-.preto a{
+}
+
+/*configuring div arround wpp icon*/
+.preto a {
     z-index: 2;
     position: fixed;
-    display: flex;
+
     left: 90vw;
     top: 15px;
     transition: 0.5s;
-    background-color: ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     padding: 5px;
     transition: 0.6s;
-}/*configuring link of wpp icon*/
-.preto1{
+}
+
+/*configuring link of wpp icon*/
+.preto1 {
     background-color: transparent;
 }
-.preto a:hover{
+
+.preto a:hover {
     scale: 1;
     border-radius: 50%;
     background-color: rgb(39, 192, 133);
-    display: ;
 }
-.box4{
+
+.box4 {
     background-color: rgb(114, 142, 194);
     width: 50px;
     height: 60px;
-    display: flex;
+
     justify-content: space-between;
     align-items: center;
-    padding:30px 40px;
+    padding: 30px 40px;
     position: fixed;
     z-index: 2;
     border-radius: 30px;
@@ -313,6 +402,83 @@ header{
     left: 90%;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -15px -15px 30px rgb(176, 176, 176);
-}/*adding a background(navigator) on the wpp icon link*/
+}
+
+/*adding a background(navigator) on the wpp icon link*/
 
 
+.carousel {
+    margin-top: 50px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel .list {
+    position: absolute;
+    top: 0;
+    width: 1140px;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%;
+}
+
+.carousel .list .obj {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    font-size: 15px;
+    background-color: transparent;
+
+}
+
+.carousel .list .obj .text {
+    background-color: transparent;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.carousel .list .obj img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .list .obj:nth-child(2) .text {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s;
+}
+
+.carousel .list .obj:nth-child(n +4) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.carousel .list .obj:nth-child(2) {
+    transform: var(--item2Transform);
+    filter: var(--item2Filter);
+    z-index: var(--item2Zindex);
+    opacity: var(--item2Zindex);
+}
+
+.carousel .list .obj:nth-child(1) {
+    transform: var(--item1Transform);
+    filter: var(--item1Filter);
+    z-index: var(--item1Zindex);
+    opacity: var(--item1Opacity);
+    pointer-events: none;
+}
+
+.carousel .list .obj:nth-child(3) {
+    transform: var(--item3Transform);
+    filter: var(--item3Filter);
+    z-index: var(--item3Zindex);
+    opacity: var(--item3Opacity);
+}

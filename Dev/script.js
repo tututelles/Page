@@ -40,16 +40,16 @@ prevButton.onclick = function(){
         showSlider('prev');
 }
 const showSlider = (type) => {
-        document.getElementsById("next").style.pointerEvents = 'none';
-        document.getElementsById("prev").style.pointerEvents = 'none';
-        document.querySelector(".carousel").classList.remove('prev', 'next');
+        nextButton.style.pointerEvents = 'none'
+        prevButton.style.pointerEvents = 'none'
+        carousel.classList.remove('prev', 'next');
         let items = document.querySelector(".carousel .list .obj")
         if (type =='next'){
-                document.querySelector(".carousel .list").appendChild(document.querySelector(".carousel .list .obj")[0]);
-                document.querySelector(".carousel").classList.add('next');
+                list.appendChild(items[0]);
+                carousel.classList.add('next');
         }
         else{
                 let  positionLast = items.length -1;
-                document.querySelector(".carousel .list").prepend(document.querySelector(".carousel .list .obj")[document.querySelector(".carousel .list .obj").length -1])
+                list.prepend(items[positionLast])
         }
 }

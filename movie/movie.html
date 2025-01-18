@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCC68mlgmAkqVCxf59jlOjVKLXQGAAGHOE",
+      authDomain: "movie-114f6.firebaseapp.com",
+      projectId: "movie-114f6",
+      storageBucket: "movie-114f6.firebasestorage.app",
+      messagingSenderId: "769618617255",
+      appId: "1:769618617255:web:d6f321f9f635bb13350c82"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+<body>
+    <header>
+        <div class="header">
+        <nav>
+            <ul id="lista">
+              <button onclick="menu()" id="but" class="menu"><ion-icon class="icon" name="menu-outline"></ion-icon></button>
+              <li><a id="link" class="link" href="#eu">Home</a></li>
+              <li><a id="link2" class="link" href="#texto">Movies</a></li>
+              <li><a id="link4" class="link" href="#form">Contacts</a></li>
+              <button onclick="menu2()" id="but2" class="close"><ion-icon class="icon"
+                  name="close-outline"></ion-icon></button>
+            </ul>
+          </nav>
+        </div>
+            <button class="btn">Sign up</button>
+    </header>
+    <div class="section">
+        <form action="text.txt" method="post">
+            <div class="inputGroup">
+                <input id="email" type="email" required="" autocomplete="off">
+                <label for="email">email</label>
+            </div>
+            <div class="inputGroup">
+                <input id="pass" type="password" required="" autocomplete="off">
+                <label for="password">password</label>
+            </div>
+            <button onclick="input()" class="btn2" type="submit">Log in</button>
+        </form>
+        
+
+    </div>
+
+
+
+<p id="emails">email: </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

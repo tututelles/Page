@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(35, 39, 63);
+    box-sizing: border-box;
+}
+
+html {
+
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: rgb(22, 22, 22);
+    width: 22.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: fixed;
+    z-index: 2;
+    border-radius: 30px;
+    top: 20px;
+    left: 37.5%;
+    box-shadow: 0px 15px 30px rgb(25, 25, 25),
+        0px -15px 30px rgb(0, 0, 0);
+        
+}
+
+nav,
+ul,
+li,
+a {
+    font-style: none;
+    list-style: none;
+    font-size: 2vh;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    transition: 0.4s;
+    font-family: "Montserrat", serif;
+    transition: 0.7s;
+    font-weight: 100;
+}
+
+/*stylishing header links*/
+
+nav,
+ul,
+li,
+a:hover {
+    scale: 1.1;
+}
+.menu {
+    background-color: rgb(22, 22, 22);
+    display: none;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -7.5px;
+    object-fit: contain;
+    transition: 0.7s;
+}
+
+/*adding a menu button when the page is too thiner*/
+
+.icon {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    transition: 0.5s;
+    margin-bottom: 0px;
+    object-fit: contain;
+
+}
+
+/*editing menu button*/
+
+.icon:hover {
+    scale: 1.05;
+}
+
+@media only screen and (max-width: 700px) {
+    .link {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        scale: 2;
+        top: 2.5px;
+    }
+
+    nav,
+    ul,
+    li,
+    a {
+        font-size: 1.7vh;
+        color: white;
+    }
+    .header ul{
+        padding: 10px;
+    }
+
+}
+
+/*configure when the page is thiner(cellphone)
+    making it responsive*/
+
+.close {
+    position: absolute;
+    left: 80%;
+    display: none;
+    background-color: rgb(22, 22, 22);
+}
+
+/*adding a close button for menu part*/
+
+.close .icon {
+    width: 20px;
+    height: 25px;
+
+}
+.btn{
+    margin-left: 90%;
+    width: 180px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: larger;
+    background-color: rgb(22, 22, 22);
+    font-family: "Montserrat", serif;
+    transition: 0.7s;
+    font-weight: 100;
+    border-radius: 30px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px black;
+}
+.btn:hover{
+    border: 2px solid black;
+    font-weight: 300;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+.section{
+    margin-left: 30%;
+    margin-top: 30vh;
+   width: 35%; 
+   border-radius: 40px;
+   height: 40vh;
+   display: flex;
+   background-color: rgb(22, 22, 22);
+   justify-content: center;
+   align-items: center;
+   box-shadow: 20px 20px 25px black,
+                -20px 20px 25px black;
+}
+form{
+    left: -200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 22, 22);
+    height: 300px;
+}
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 190px;
+    position: relative;
+    background-color: rgb(22, 22, 22);
+  }
+  
+  .inputGroup input {
+    width: 200%;
+    font-size: 100%;
+    background-color: rgb(22, 22, 22);
+    padding: 0.8em;
+    color: white;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    border-radius: 20px;
+    padding: 0.6em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+    background-color:rgb(22, 22, 22) ;
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    color: white;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: rgb(22, 22, 22);
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+  .btn2 {
+margin-left: 50px;
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 3.75em;
+    width: 300px;
+    
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .btn2:disabled {
+    pointer-events: none;
+   }
+   
+   .btn2:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .btn2:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+
+
+

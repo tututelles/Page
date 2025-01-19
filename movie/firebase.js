@@ -19,6 +19,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+let email = document.getElementById('email');
+let password = document.getElementById('password');
+
 
 const auth = getAuth();
 signInWithEmailAndPassword(auth, email, password)

@@ -4,7 +4,14 @@ import {getAuth, createUserWithEmailAndPassword, SignInWithEmailAndPassword} fro
 import{getFirestore, setDoc, doc}  from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from 'firebase/app';
 
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+  //...
+};
+
+const app = initializeApp(firebaseConfig);
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCC68mlgmAkqVCxf59jlOjVKLXQGAAGHOE",

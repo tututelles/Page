@@ -40,7 +40,7 @@ html {
 }
 
 .header {
-    background-color: rgb(114, 142, 194);
+    background-color: rgb(121, 121, 121);
     width: 35%;
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@ a {
     list-style: none;
     font-size: 2vh;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -86,8 +86,8 @@ a:hover {
 .eu {
     border-radius: 50%;
     margin: 150px 0 75px;
-    box-shadow: 15px 15px 30px rgb(63, 126, 228),
-        -15px -15px 30px rgb(63, 126, 228);
+    box-shadow:15px 15px 30px rgb(23, 23, 23),
+    -15px -15px 30px rgb(198, 198, 198);
     transition: 0.75s;
 }
 
@@ -95,6 +95,7 @@ a:hover {
 .eu:hover {
     box-shadow: 15px 15px 30px rgb(23, 23, 23),
         -15px -15px 30px rgb(198, 198, 198);
+        scale: 1.01;
 }
 
 /*photo hover transition*/
@@ -105,7 +106,12 @@ a:hover {
 }
 
 /*text*/
-
+.caixa5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 form div {
     display: flex;
     flex-direction: column;
@@ -181,7 +187,7 @@ textarea {
 
 /*adding stylish when the input is clicked*/
 
-.button .btn {
+.btn {
     color: gray;
     background-color: #ccc;
     width: 60%;
@@ -193,21 +199,21 @@ textarea {
     cursor: pointer;
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    box-shadow: 6px 6px 12px #727272, 0px 0px 0px transparent;
 }
 
 /*editing everithing of form button*/
 
-.button .btn:hover {
+.btn:hover {
     border: 1.5px solid white;
 }
 
-.button .btn:active {
+.btn:active {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
 .menu {
-    background-color: rgb(114, 142, 194);
+    background-color: rgb(133, 133, 133);
     display: none;
     position: fixed;
     width: 10px;
@@ -318,13 +324,14 @@ iframe {
 
 .container2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    top: -300px;
 }
 
 .nome {
     font-size: 15vh;
-    margin-top: 20%;
+    margin-top: ;
     border-radius: 40px;
     padding: 10px;
     color: rgb(0, 0, 0);
@@ -337,8 +344,8 @@ iframe {
 
 .nome:hover {
     box-shadow: none;
-    text-shadow: 15px 15px 30px rgb(19, 19, 19),
-        -15px -15px 30px rgb(20, 20, 20);
+    text-shadow: 10px 5px 10px rgb(83, 83, 83),
+        -0px 0px 0px rgb(20, 20, 20);
     background-color: rgb(226, 221, 211);
 }
 
@@ -354,7 +361,7 @@ header {
     left: 90vw;
     top: 15px;
     transition: 0.5s;
-    background-color: rgb(114, 142, 194);
+    background-color: rgb(102, 102, 102);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -388,7 +395,7 @@ header {
 }
 
 .box4 {
-    background-color: rgb(114, 142, 194);
+    background-color: rgb(102, 102, 102);
     width: 50px;
     height: 60px;
 
@@ -406,7 +413,7 @@ header {
 
 /*adding a background(navigator) on the wpp icon link*/
 
-
+/*
 .carousel {
     margin-top: 50px;
     height: 800px;
@@ -562,3 +569,45 @@ header {
 .carousel.prev .list .obj:nth-child(3){
     animation: position2Item 0.5s ease-in-out forwards;
 }
+*/
+
+.container3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.section2{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.obj{
+    margin: 20px;
+}
+.arrows{
+    position: absolute;
+    bottom: -870px;
+    width: 1140px;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrows .prev,
+.arrows .next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #555;
+}
+
+

@@ -53,3 +53,10 @@ const showSlider = (type) => {
                 list.prepend(items[positionLast])
         }
 }
+const carousel = [];
+carousel.push(document.getElementById('obj'), document.getElementById('obj2'), document.getElementById('obj3'));
+function2(){
+        const firstElement = carousel.shift();
+        carousel.push(firstElement)
+        console.log(carousel)
+}
